@@ -699,9 +699,6 @@ button {
     padding: 50px 0;
     padding-top: 100px;
   }
-  .header-bottom {
-    background-position: 135% 100%;
-  }
   .sub-title {
     width: 97px;
     padding: 10px;
@@ -761,6 +758,11 @@ button {
     font-size: 15px;
   }
 }
+@media (max-width: 770px) {
+  .header-bottom {
+    background-position: 135% 100%;
+  }
+}
 @media (max-width: 760px) {
   .header-bottom {
     height: 54vw;
@@ -782,7 +784,7 @@ button {
   }
 
 }
-@media (max-width: 752px) {
+@media (max-width: 753px) {
   .section-advantage {
     padding-top: 200px;
   }
