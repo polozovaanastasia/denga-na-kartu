@@ -23,15 +23,17 @@
           };
     };
     var faqItemClickHandler = function(event) {
-        try {
-            body.classList.add('popup-opened');
-            var currentElementId = event.target.id
-            var currentElement = document.querySelector('.'+ currentElementId)
-
-            currentElement.classList.add('visible')
-            openPopup(evt);
-
-        } catch (event) {
+        if(event.target.id != '') {
+            try {
+                body.classList.add('popup-opened');
+                var currentElementId = event.target.id
+                var currentElement = document.querySelector('.'+ currentElementId)
+    
+                currentElement.classList.add('visible')
+                openPopup(evt);
+    
+            } catch (event) {
+            }
         }
     };
     var buttonNextClickHandler = function(event) {
