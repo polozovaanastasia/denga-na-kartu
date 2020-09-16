@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Деньга на карту</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <header class="header">
+        <div class="layout-center-wrapper">
+            <a href="https://polozovaanastasia.github.io/denga-na-kartu/" class="header__logo">
+                <img src="img/logo.png" alt="Деньга на карту">
+            </a>
+            <div class="header-top__right">
+                <a href="tel:+78000000000" class="header-top__tel">8 800 000 00 00</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="layout-center-wrapper">
+            <div class="main__breadgrumbs">
+                <ul class="breadgrumbs-list">
+                    <li class="breadgrumbs-item">
+                        <span>
+                            Контактная информация
+                        </span>
+                    </li>
+                    <hr class="breadgrumbs-line">
+                    <li class="breadgrumbs-item">
+                        <span>
+                            Паспортные данные
+                        </span>
+                    </li>
+                    <hr class="breadgrumbs-line">
+                    <li class="breadgrumbs-item">
+                        <span>
+                            Активация сервиса
+                        </span>
+
+                    </li>
+                    <hr class="breadgrumbs-line">
+                    <li class="breadgrumbs-item">
+                        <span>
+                            Выбор займа
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__content">
+                <form class="main__content_section" method="post">
+                    <header class="form__header">
+                        <h2 class="form__title">Контактная информация</h2>
+                        <h4 class="form__step">шаг 1 из 4</h4>
+                    </header>
+                    <section class="form__content">
+                        <div class="form__content_row">
+                            <div class="input-container">
+                                <input class="form__content_input input_first-name" type="text" name="first_name">
+                                <label class="input-placeholder">
+                                    Имя
+                                </label>
+                                
+                                <div class="validation-message">
+                                    Необходимо заполнить 'Имя'
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <input class="form__content_input input_middle-name" type="text" name="middle_name">
+                                <label class="input-placeholder">Фамилия</label>
+                                
+                                <div class="validation-message">
+                                    Необходимо заполнить 'Фамилия'
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__content_row">
+                            <div class="input-container">
+                                <input class="form__content_input input_last-name" type="text" name="last_name">
+                                <label class="input-placeholder">Отчество</label>
+                                <div class="validation-message">
+                                    Необходимо заполнить 'Отчество'
+                                </div>
+                            </div>
+                            <div class="checkbox-container">
+                                <input class="checkbox__no-last-name" id="checkbox__no-last-name" type="checkbox">
+                                <label class="checkbox__no-last-name_label" for="checkbox__no-last-name">Нет
+                                    отчества
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form__content_row">
+                                <div class="input-container">
+                                    <input class="form__content_input input_phone" type="tel" name="phone">
+                                    <label class="input-placeholder">Мобильный телефон</label>
+                                    
+                                    <div class="validation-message">
+                                        Необходимо заполнить 'Телефон'
+                                    </div>
+                                </div>
+                                <div class="input-container">
+                                    <input class="form__content_input input_email" type="email" name="email">
+                                    <label class="input-placeholder">Эл. почта</label>
+                                    
+                                    <div class="validation-message">
+                                        Некорректный адрес e-mail
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="checkbox__leads-is-aree" id="checkbox__leads-is-aree" type="checkbox" checked>
+                            <label class="checkbox__leads-is-aree_label" for="checkbox__leads-is-aree">
+                                Согласен с
+                                <a href="#">договором публичной оферты</a>,
+                                даю свое согласие на
+                                <a href="#">обработку персональных данных</a>
+                                и на
+                                <a href="#">получение рекламных материалов</a>
+                            </label>
+                        </div>
+                    </section>
+                    <footer class="form__footer">
+                        <button class="button-big next-step__button" type="submit">
+                            Продолжить
+                        </button>
+                    </footer>
+                </form>
+                <aside class="main__bottom_section-info">
+                    <div class="section-info__cloud section-loan">
+                        <div class="cloud__header">
+                            <h2 class="cloud__title">Займ</h2>
+                            <span class="loan-value">10 000</span>
+                                &nbsp;
+                            <span> на 30 дней</span>
+                        </div>
+                    </div>
+                    <div class="section-info__app">
+                        <div class="timer-content"></div>
+                        <div class="base-timer__title">
+                            Займы со ставкой от 0%
+                            будут доступны в течение
+                            15 минут
+                        </div>
+                    </div>
+                    <div class="section-info__app">
+                        <div class="progress-content">
+                            <div class="base-progress">
+                                <svg class="base-progress__svg" viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g class="base-progress__circle">
+                                        <circle class="base-progress__path-elapsed" cx="50" cy="50" r="45"></circle>
+                                        <path id="base-progress-path-remaining" stroke-dasharray="43 283"
+                                            class="base-progress__path-remaining" d="
+                                                        M 50, 50
+                                                        m -45, 0
+                                                        a 45,45 0 1,0 90,0
+                                                        a 45,45 0 1,0 -90,0
+                                                      "></path>
+                                    </g>
+                                </svg>
+                                <span id="base-progress-label" class="base-progress__label">
+                                    15%
+                                    <p class="small-label">заполнено</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="base-progress__title">
+                            При оформлении заявки
+                            рекомендуем заполнить
+                            все поля
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="layout-center-wrapper">
+            <h3 class="footer-contact__title">
+                Контактная информация
+            </h3>
+            <ul class="footer__contact">
+                <li class="footer-contact__item">
+                    <span>Телефон</span>
+                    <a href="tel:+78000000000">8 800 000 00 00</a>
+                </li>
+                <li class="footer-contact__item">
+                    <span>Эл. почта</span>
+                    <a href="mailto:support@sbergrad.ru">support@cash2card.ru</a>
+                </li>
+                <li class="footer-contact__item">
+                    <span>Почтовый адрес</span>
+                    683000, г. Петропавловск-Камчатский,
+                    <br>
+                    ул. Ленинская, д.14, офис 666
+                </li>
+            </ul>
+            <div class="footer-disclaimer">
+                <p>Услугу подбора предложений на ресурсе Деньга на карту
+                    предоставляет компания ООО "Company", ОГРН 1234567890123, ИНН/КПП 1234567890 / 123456789.
+                    Сайт оказывает платные услуги по подбору кредитных продуктов для клиентов, а именно
+                    предлагает клиенту список предложений кредитных учреждений, некредитных финансовый
+                    организаций, в которые клиент может обратиться с целью оформления заявки на кредитный продукт.
+                    Проект не является банком или кредитором, не относится к финансовым учреждениям и не
+                    несёт ответственности за последствия любых заключенных договоров кредитования или условия по ним.
+                    Минимальная процентная ставка у некоторых партнеров составляет 0%.
+                    Чтобы оформить заявку на получение займа, необходимо заполнить анкету на сайте проекта.
+                    Совершая любые действия на сайте, вы даете свое
+                    <a href="#">Согласие на обработку персональных данных</a> и
+                    <a href="#">Согласие на получение рекламных материалов</a>.
+                    Вы ознакомились и соглашаетесь с
+                    <a href="#">Договором публичной оферты</a>,
+                    <a href="#">Политикой Конфиденциальности</a>,
+                    <a href="#">Тарифами.</a>
+                </p>
+                <p>
+                    <span>*</span>
+                    У пользователей сервиса есть возможность получить займ с минимальной процентной ставкой 0%.
+                    Подробности при выборе персонального предложения.
+                </p>
+
+                <p>
+                    <span>**</span>
+                    Внимание! Обработка заявки платная: стоимость услуги (далее по сайту — Активация сервиса)
+                    составляет составляет 499 (четыреста девяносто девять) рублей с периодичностью согласно тарифам
+                    сервиса.
+                </p>
+
+                <p>Если услуга перестала быть актуальна для вас (вы получили займ или более не нуждаетесь в займах),
+                    вы можете самостоятельно отписаться от услуги в любой момент
+                    <a href="#">Изменить подписку.</a>
+                </p>
+
+                <p>По любым вопросам вы можете связаться со специалистами сервиса по электронной почте
+                    <a href="mailto:support@sbergrad.ru">support@cash2card.ru</a>
+                </p>
+            </div>
+            <a href="/" class="footer__logo">
+                <img src="img/footer-logo.png" alt="Деньга на карту">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="js/validates.js"></script>
+    <script src="js/contacts.js"></script>
+    <script src="js/timer.js"></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

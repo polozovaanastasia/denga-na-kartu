@@ -1,0 +1,8 @@
+
+/*============================= GTEestiProDisplay ================================*/
+@font-face{
+	font-family: 'GTEestiProDisplay';
+	src: url('../fonts/GTEestiProDisplay/GT-Eesti-Pro-Display.otf'),
+		url('../fonts/GTEestiProDisplay/GT-Eesti-Pro-Display.ttf'),
+		url('../fonts/GTEestiProDisplay/GT-Eesti-Pro-Display.woff');
+}

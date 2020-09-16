@@ -1,0 +1,1049 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ======================= header =========================== */
+body {
+  font: 400 16px 'GTEestiProDisplay', serif;
+  color: #001A34;
+}
+body.popup-opened {
+  overflow: hidden;
+}
+.layout-center-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1 {
+  margin: 0;
+  font-size: 75px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 26px;
+}
+.popup {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-wrapper {
+  position: relative;
+}
+.popup-opened .popup {
+  display: flex;
+}
+.popup .cloud {
+  line-height: 1.4;
+}
+.cloud-wrapper {
+  display: none;
+}
+.cloud-wrapper.visible {
+  display: block;
+}
+.cloud-wrapper .button-big {
+  margin-top: 50px;
+}
+.popup__close {
+  position: absolute;
+  right: 0px;
+  top: -30px;
+  padding: 10px;
+  /* background-color: #F4724C; */
+  background-image: url(../img/cloud-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.header-top {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+.header-top .layout-center-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.header-top__logo img {
+  padding: 19px 0;
+}
+.header-top__tel {
+  margin-right: 75px;
+  text-decoration: none;
+  color: #001A34;
+}
+button {
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+}
+.button:focus {
+  outline: none;
+}
+.header-top__button {
+  padding: 15px 40px;
+  font-size: 13px;
+  background: linear-gradient(270deg, #FF8562 0%, #67288C 100%);
+  border-radius: 30px;
+  cursor: pointer;
+}
+.header-bottom {
+  padding: 100px 0;
+  padding-top: 184px;
+  background: #001A34;
+  background-image: url(../img/header-bottom-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #ffffff;
+}
+.header-bottom .layout-center-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header-bottom__title {
+  /* margin: 0;
+  font-size: 75px; */
+}
+.header-bottom__title span {
+  font-size: 200px;
+  line-height: 1;
+  vertical-align: top;
+}
+.sub-title {
+  display: inline-block;
+  position: relative;
+  top: -100px;
+  width: 126px;
+  padding: 20px;
+  border: 5px #FF8562 dotted;
+  border-radius: 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.header-bottom__content p {
+  position: relative;
+  bottom: 100px;
+  font-size: 24px;
+}
+.cloud {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 46px;
+  /* font-weight: 900; полужирное начертание */
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #001A34;
+}
+.cloud__title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 30px;
+}
+.cloud__title span {
+  color: #FF8562;
+}
+.range {
+  width: 100%;
+}
+.range-titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+.range-output {
+  font-size: 28px;
+  color: #FF8562;
+}
+.range-output span {
+  font-size: 20px;
+  color: #001A34;
+}
+.rangeslider,
+.rangeslider__fill {
+  box-shadow: none;
+  border-radius: 0;
+}
+.rangeslider {
+  height: 5px;
+  margin-bottom: 13px;
+  background-color: #E6EEF4;
+}
+.rangeslider__fill {
+  background-color:  #FF8562;
+}
+.rangeslider__handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px #b2b9c4;
+  cursor: pointer;
+}
+.rangeslider__handle:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FF8562;
+}
+.rangeslider--horizontal .rangeslider__handle {
+  top: -15px;
+}
+.range-ranges {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #B4BDC7;
+}
+.cloud__footer {
+  text-align: center;
+  font-size: 16px;
+  color: #B4BDC7;
+}
+.cloud__footer span {
+  display: block;
+  font-size: 11px;
+}
+.cloud__footer .cloud__footer_calc-value {
+  display: inline-block;
+  font-size: 16px;
+}
+.cloud__footer span i {
+  color: #FF8562;
+}
+.button-big {
+  padding: 23px 50px;
+  font-size: 16px;
+  border-radius: 40px;
+  background-color: #FF8562;
+  box-shadow: 0px 12px 25px rgba(255, 133, 98, 0.75);
+  transition: all .3s;
+  cursor: pointer;
+}
+.button-big:hover {
+  background-color: #F4724C;
+  transform: translateY(1px);
+}
+/* ======================= header end =========================== */
+.section-about {
+  line-height: 1.5;
+}
+.section-advantage {
+  background: #F4F8FB;
+}
+.advantage__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 42px 0;
+  list-style-type: none;
+}
+.advantage-item__icon {
+  display: inline-block;
+  width: 46px;
+  height: 50px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+}
+.advantage__item {
+  display: flex;
+  align-items: center;
+}
+.advantage__item:nth-child(1) .advantage-item__icon {
+  background-image: url(../img/advantage-section__icon.svg);
+}
+.advantage__item:nth-child(2) .advantage-item__icon {
+  background-image: url(../img/advantage-section__icon-2.svg);
+}
+.advantage__item:nth-child(3) .advantage-item__icon {
+  background-image: url(../img/advantage-section__icon-3.svg);
+}
+.about__service,
+.about__note {
+  width: 55%;
+  float: left;
+  margin-bottom: 80px;
+}
+.about__steps {
+  float: right;
+  width: 35%;
+  margin-bottom: 80px;
+}
+.about-service__title,
+.about-block__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.about-service__list {
+  padding: 0;
+  list-style: none;
+  line-height: 2;
+}
+.about-service__item::before,
+.cloud__item::before {
+  content:  "—";
+  position: relative;
+  left: -5px;
+  color: #FF8562;
+}
+.cloud__item::before {
+  left: -18px;
+}
+.cloud__item {
+  list-style: none;
+  text-indent: -23px;
+}
+.about-service__item span {
+  color: #B4BDC7;
+}
+.about-service__item i {
+  color: #FF8562;
+}
+.about-steps__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+.about-steps__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.about-steps__count {
+  margin-right: 16px;
+  font-size: 48px;
+  color: #E6EEF4;
+}
+.about-steps__content {
+  font-size: 16px;
+  color: #001A34;
+}
+.about-steps__icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+}
+.about-steps__item:nth-child(1) .about-steps__icon {
+  background: url(../img/about-steps__icon.svg);
+}
+.about-steps__item:nth-child(2) .about-steps__icon {
+  background: url(../img/about-steps__icon-2.svg);
+}
+.about-steps__item:nth-child(3) .about-steps__icon {
+  background: url(../img/about-steps__icon-3.svg);
+}
+.about-steps__item:nth-child(4) .about-steps__icon {
+  background: url(../img/about-steps__icon-4.svg);
+}
+.about-note__payment-list {
+  padding: 0;
+}
+.about-note__payment-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+.about-note__payment-item.mir {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/payment-item__mir.png);
+}
+.about-note__payment-item.mir-2 {
+  width: 71px;
+  height: 20px;
+  background-image: url(../img/payment-item__mir-2.png);
+}
+.about-note__payment-item.visa {
+  width: 62px;
+  height: 20px;
+  background-image: url(../img/payment-item__visa.png);
+}
+.about-note__payment-item.mc {
+  width: 36px;
+  height: 24px;
+  background-image: url(../img/payment-item__mc.png);
+}
+.about-note__payment-item.maestro {
+  width: 33px;
+  height: 20px;
+  background-image: url(../img/payment-item__maestro.png);
+}
+.about-note__payment-item.qiwi {
+  width: 28px;
+  height: 29px;
+  background-image: url(../img/payment-item__qiwi.png);
+}
+.about-note__payment-item.yandex {
+  width: 20px;
+  height: 26px;
+  background-image: url(../img/payment-item__yandex.png);
+}
+.about__faq {
+  clear: both;
+}
+.about-faq__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-faq__item {
+  width: 32%;
+  margin-bottom: 30px;
+}
+.about-faq__item span {
+  border-bottom: 1px dashed #FF8562;
+  color: #FF8562;
+  transition: all .3s;
+  cursor: pointer;
+}
+.about-faq__item span:hover{
+  border-bottom-color: #67288C;
+  color: #67288C;
+}
+.about-faq__wrapper :nth-child(3n+2) {
+  margin: 0% 2%;
+}
+.about-faq__item:first-child {
+  margin-left: 0;
+}
+.section-statistics {
+  padding: 100px 0;
+  background-color: #FF8562;
+  color: #fff;
+}
+.section-statistics__title {
+  text-align: center;
+}
+.section-statistics__content,
+.footer__contact {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+.section-statistics__item {
+  text-align: center;
+  font-size: 55px;
+}
+.section-statistics__item span {
+  display: block;
+  font-size: 20px;
+}
+.section-statistics__request {
+  margin: 0 auto;
+}
+.section-statistics__request .cloud__title {
+  text-align: center;
+}
+/* ======================= footer =========================== */
+.footer {
+  padding: 100px 0 50px;
+  background-color: #F4F8FB;
+}
+.footer-contact__title {
+  margin-top: 0;
+}
+.footer__contact {
+  justify-content: space-between;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #E6EEF4;
+}
+.footer-contact__item span {
+  display: block;
+  font-size: 16px;
+  color: #B4BDC7;
+}
+.footer-contact__item {
+  font-size: 20px;
+}
+.footer-contact__item a{
+  text-decoration: none;
+  color: #001A34;
+}
+.footer-disclaimer {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font-size: 13px;
+  color: #B4BDC7;
+}
+.footer-disclaimer a {
+  color: #B4BDC7;
+}
+.footer-disclaimer a:hover {
+  text-decoration: none;
+}
+.footer-disclaimer span {
+  color: #FF8562;
+}
+.footer-disclaimer p:nth-child(3) {
+  font-weight: 900;
+}
+/* ================== @media ==================== */
+
+@media (max-width: 1026px) {
+  .header-bottom__title {
+    font-size: 55px;
+  }
+  .button-big {
+    font-size: 12px;
+  }
+  .header-bottom__title span {
+    font-size: 165px;
+  }
+  .header-bottom__content p {
+    font-size: 20px;
+  }
+  .sub-title {
+    top: -90px;
+    width: 114px;
+    padding: 14px;
+  }
+  .header-bottom__request {
+    width: 280px;
+    padding: 30px;
+  }
+  .cloud__title,
+  .about-note__title,
+  .about-faq__title,
+  .footer-contact__title {
+    font-size: 23px;
+  }
+  .about__faq {
+    margin-bottom: 30px;
+  }
+  .about-faq__item {
+    width: 49%;
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+  .about-faq__wrapper :nth-child(3n+2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .advantage__item {
+    font-size: 15px;
+  }
+  .advantage-item__icon {
+    width: 52px;
+    margin-right: 6px;
+  }
+  .section-about,
+  .about-block {
+    font-size: 15px;
+  }
+  .about-service__title,
+  .about-block__title {
+    margin-bottom: 40px;
+    font-size: 27px;
+  }
+  .section-statistics__title {
+    font-size: 34px;
+  }
+  .section-statistics__item {
+    font-size: 40px;
+  }
+  .section-statistics__item span {
+    font-size: 16px;
+  }
+  .section-statistics__request .cloud__title {
+    font-size: 18px;
+  }
+  .footer__contact {
+    font-size: 15px;
+  }
+  .footer-contact__item {
+    font-size: 16px;
+  }
+  .footer-disclaimer {
+    font-size: 12px;
+  }
+  .about-note__payment-list {
+    display: inline-flex;
+  }
+}
+@media (max-width: 830px) {
+  .header-bottom {
+    background-image: url(../img/header-bottom-bg_m.jpg);
+    background-position: 30% 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header-bottom {
+    padding: 50px 0;
+    padding-top: 100px;
+  }
+  .header-bottom .layout-center-wrapper{
+    justify-content: center;
+  }
+  .sub-title {
+    width: 97px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .header-bottom__content p {
+    font-size: 16px;
+  }
+  .header-bottom__request {
+    z-index: 99;
+  }
+  .cloud__title,
+  .about-note__title,
+  .about-faq__title,
+  .footer-contact__title {
+    font-size: 18px;
+  }
+  .range-label {
+    font-size: 14px;
+  }
+  .range-output {
+    font-size: 25px;
+  }
+  .range-ranges {
+    font-size: 12px;
+  }
+  .cloud__footer {
+    font-size: 14px;
+  }
+  .about__service, .about__note {
+    width: auto;
+    float: none;
+    margin-bottom: 50px;
+  }
+  .about-service__list {
+    width: 49%;
+    display: inline-block;
+  }
+  .about__steps {
+    width: auto;
+  }
+  .about__steps {
+    margin-bottom: 50px;
+  }
+  .about-faq__item {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .about-faq__wrapper {
+    margin-bottom: 20px;
+  }
+  .section-statistics__request {
+    max-width: 320px;
+  }
+  .footer-contact__item span {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 752px) {
+  .header-bottom {
+    height: 54vw;
+    background-position: 135% 100%;
+
+  }
+  .section-advantage {
+    padding-top: 210px;
+  }
+  .about-faq__wrapper {
+    display: block;
+  }
+  .about-faq__item {
+    display: block;
+    width: auto;
+    margin-bottom: 25px;
+  }
+  .about-faq__wrapper :nth-child(3n+2) {
+    margin-bottom: 25px;
+  }
+
+}
+@media (max-width: 674px) {
+  .header-bottom {
+    height: 54vw;
+    background-image: url(../img/header-bottom-bg_xs.svg);
+    background-position: right bottom;
+  }
+  .header-top__tel {
+    display: none;
+  }
+  .header-top__button {
+    padding: 12px 14px;
+    font-size: 10px;
+  }
+  .header-top__logo img {
+    width: 115px;
+  }
+  .header-bottom__title {
+    font-size: 45px;
+  }
+  .sub-title {
+    top: -66px;
+    width: 87px;
+  }
+  .header-bottom__title span {
+    font-size: 120px;
+  }
+  .sub-title {
+    font-size: 12px;
+  }
+  .header-bottom__content p {
+    display: none;
+  }
+  .section-advantage {
+    padding-top: 110px;
+  }
+  .advantage__list {
+    display: block;
+  }
+  .advantage__item {
+    margin-bottom: 30px;
+  }
+  .section-statistics__item {
+    font-size: 35px;
+  }
+  .about-service__list {
+      width: auto;
+      display: block;
+  }
+  .about-note__payment-list {
+    display: inline-block;
+  }
+  .footer__contact {
+    display: block;
+    padding-bottom: 0;
+  }
+  .footer-contact__item {
+    margin-bottom: 25px;
+  }
+  .footer-disclaimer {
+    padding-top: 20px;
+  }
+  .footer__logo img {
+      width: 115px;
+  }
+} 
+@media (max-width: 585px) {
+  .section-advantage{
+    padding-top: 185px;
+  }
+  .section-statistics__content {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .section-statistics__item {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 470px) {
+  .section-advantage{
+    padding-top: 225px;
+  } 
+}
+@media (max-width: 440px) {
+  .header-bottom {
+    height: 75vw;
+  }
+  .header-bottom__request,
+  .section-statistics__request {
+      max-width: 215px;
+  }
+  .about-faq__item {
+      white-space: normal;
+  }
+}
+@media (max-width: 350px) {
+  .section-statistics__request {
+    max-width: 160px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
