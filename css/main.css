@@ -218,10 +218,6 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.header-bottom__title {
-  /* margin: 0;
-  font-size: 75px; */
-}
 .header-bottom__title span {
   font-size: 200px;
   line-height: 1;
@@ -698,7 +694,7 @@ button {
     background-position: 30% 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .header-bottom {
     padding: 50px 0;
     padding-top: 100px;
