@@ -885,6 +885,10 @@ button {
 @media (max-width: 350px) {
   .section-statistics__request {
     max-width: 160px;
+    margin-top: -50px;
+  }
+  .section-advantage {
+    padding-top: 365px;
   }
 }
 /* ==========================================================================
