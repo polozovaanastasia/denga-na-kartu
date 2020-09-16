@@ -699,9 +699,6 @@ button {
     padding: 50px 0;
     padding-top: 100px;
   }
-  .header-bottom .layout-center-wrapper{
-    justify-content: center;
-  }
   .header-bottom {
     background-position: 135% 100%;
   }
@@ -768,10 +765,12 @@ button {
   .header-bottom {
     height: 54vw;
     background-position: 135% 100%;
-
   }
   .section-advantage {
-    padding-top: 210px;
+    padding-top: 200px;
+  }
+  .header-bottom .layout-center-wrapper{
+    justify-content: center;
   }
   .about-faq__wrapper {
     display: block;
