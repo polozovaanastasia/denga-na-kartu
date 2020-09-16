@@ -859,6 +859,11 @@ button {
   .section-statistics__item {
     margin-bottom: 20px;
   }
+  .cloud {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
 }
 @media (max-width: 470px) {
   .section-advantage{
