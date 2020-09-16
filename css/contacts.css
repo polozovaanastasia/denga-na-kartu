@@ -311,6 +311,8 @@ body {
     padding-bottom: 40px;
 }
 .button-big {
+    display: flex;
+    justify-content: center;
     padding: 23px 50px;
     font-size: 16px;
     text-align: center;
@@ -429,6 +431,9 @@ body {
     }
     .main__bottom_section-info {
         display: block;
+    }
+    .validation-message {
+        font-size: 11px;
     }
 }
 @media (max-width: 520px) {
