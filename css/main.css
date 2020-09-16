@@ -713,6 +713,9 @@ button {
   .header-bottom__request {
     z-index: 99;
   }
+  .section-advantage {
+    padding-top: 210px;
+  }
   .cloud__title,
   .about-note__title,
   .about-faq__title,
@@ -766,9 +769,6 @@ button {
     height: 54vw;
     background-position: 135% 100%;
 
-  }
-  .section-advantage {
-    padding-top: 210px;
   }
   .about-faq__wrapper {
     display: block;
