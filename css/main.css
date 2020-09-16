@@ -764,7 +764,7 @@ button {
     font-size: 15px;
   }
 }
-@media (max-width: 752px) {
+@media (max-width: 760px) {
   .header-bottom {
     height: 54vw;
     background-position: 135% 100%;
