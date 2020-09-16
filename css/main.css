@@ -766,9 +766,6 @@ button {
     height: 54vw;
     background-position: 135% 100%;
   }
-  .section-advantage {
-    padding-top: 200px;
-  }
   .header-bottom .layout-center-wrapper{
     justify-content: center;
   }
@@ -784,6 +781,11 @@ button {
     margin-bottom: 25px;
   }
 
+}
+@media (max-width: 752px) {
+  .section-advantage {
+    padding-top: 200px;
+  }
 }
 @media (max-width: 674px) {
   .header-bottom {
