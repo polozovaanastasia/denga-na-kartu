@@ -136,9 +136,9 @@ h3 {
   z-index: 101;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.popup-opened {
+/* .popup-opened {
   overflow: hidden;
-}
+} */
 .popup-wrapper {
   position: relative;
 }
