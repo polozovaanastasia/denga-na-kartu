@@ -694,7 +694,7 @@ button {
     background-position: 30% 100%;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 786px) {
   .header-bottom {
     padding: 50px 0;
     padding-top: 100px;
